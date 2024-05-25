@@ -14,6 +14,12 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
         .service {
             position: relative;
             width: 90%;
@@ -38,37 +44,45 @@
             font-weight: bold;
             text-decoration: none;
             color: #fff;
-            background-color: rgba(0, 123, 255, 0.8);
+            background-color: rgba(128, 128, 128, 0.8); /* Gray color */
             border-radius: 5px;
             transition: background-color 0.2s;
         }
         .text-button:hover {
-            background-color: rgba(0, 86, 179, 0.8);
+            background-color: rgba(105, 105, 105, 0.8); /* Darker gray */
+        }
+        @media (min-width: 768px) {
+            .services-container {
+                flex-direction: row;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Services</h1>
     
-    <div class="service">
-        <a href="pageX.html" class="text-button">Real Estate Services</a>
-        <a href="real-estate.html">
-            <img src="placeholder-realestate.jpg" alt="Real Estate Services" class="button-img">
-        </a>
-    </div>
-    
-    <div class="service">
-        <a href="pageY.html" class="text-button">Wedding Services</a>
-        <a href="weddings.html">
-            <img src="placeholder-weddings.jpg" alt="Wedding Services" class="button-img">
-        </a>
-    </div>
-    
-    <div class="service">
-        <a href="pageZ.html" class="text-button">Drone Services</a>
-        <a href="drones.html">
-            <img src="placeholder-drones.jpg" alt="Drone Services" class="button-img">
-        </a>
+    <div class="services-container">
+        <div class="service">
+            <a href="pageX.html" class="text-button">Real Estate Services</a>
+            <a href="real-estate.html">
+                <img src="placeholder-realestate.jpg" alt="Real Estate Services" class="button-img">
+            </a>
+        </div>
+        
+        <div class="service">
+            <a href="pageY.html" class="text-button">Wedding Services</a>
+            <a href="weddings.html">
+                <img src="placeholder-weddings.jpg" alt="Wedding Services" class="button-img">
+            </a>
+        </div>
+        
+        <div class="service">
+            <a href="pageZ.html" class="text-button">Drone Services</a>
+            <a href="drones.html">
+                <img src="placeholder-drones.jpg" alt="Drone Services" class="button-img">
+            </a>
+        </div>
     </div>
     
 </body>
