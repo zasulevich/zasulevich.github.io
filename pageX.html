@@ -6,15 +6,103 @@
     <title>Real Estate Services</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             padding: 20px;
             text-align: center;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: left;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+        }
+        .service h2 {
+            font-size: 1.5em;
+            margin: 20px 20px 10px;
+        }
+        .service p {
+            font-size: 1em;
+            margin: 0 20px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #007aff;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <h1>Real Estate Services</h1>
-    <p>Welcome to our Real Estate Services page. Here you will find all the information you need about our real estate offerings.</p>
-    <a href="index.html">Back to Home</a>
+    <p>Welcome to our Real Estate Services page. Here you will find all the information you need about our premium real estate offerings. Each service is crafted to elevate your real estate listings and captivate your audience.</p>
+    
+    <div class="service-container">
+        <div class="service">
+            <img src="property_video_tours.jpg" alt="Property Video Tours">
+            <h2>Property Video Tours</h2>
+            <p>Our property video tours provide a comprehensive view of your listings, showcasing every detail with stunning clarity. These tours are designed to engage potential buyers and provide an immersive experience.</p>
+        </div>
+        <div class="service">
+            <img src="aerial_drone_photography.jpg" alt="Aerial Drone Photography">
+            <h2>Aerial Drone Photography</h2>
+            <p>Capture breathtaking aerial views of your properties with our drone photography services. Highlight the property's location, surroundings, and unique features from a perspective that stands out.</p>
+        </div>
+        <div class="service">
+            <img src="vr_tours.jpg" alt="Virtual Reality (VR) Tours">
+            <h2>Virtual Reality (VR) Tours</h2>
+            <p>Offer a next-level viewing experience with our VR tours. Prospective buyers can explore properties from the comfort of their homes, feeling as if they are walking through the actual space.</p>
+        </div>
+        <div class="service">
+            <img src="testimonial_videos.jpg" alt="Testimonial Videos">
+            <h2>Testimonial Videos</h2>
+            <p>Build trust and credibility with our professionally produced testimonial videos. Hear from satisfied clients and showcase their positive experiences with your services.</p>
+        </div>
+        <div class="service">
+            <img src="time_lapse_construction.jpg" alt="Time-Lapse Construction Videos">
+            <h2>Time-Lapse Construction Videos</h2>
+            <p>Document the progress of your construction projects with our time-lapse videos. These videos provide a fascinating view of the building process from start to finish.</p>
+        </div>
+        <div class="service">
+            <img src="social_media_content.jpg" alt="Social Media Content">
+            <h2>Social Media Content</h2>
+            <p>Enhance your social media presence with engaging content tailored for platforms like Instagram, Facebook, and YouTube. Capture attention and drive traffic to your listings.</p>
+        </div>
+        <div class="service">
+            <img src="video_editing_services.jpg" alt="Video Editing Services">
+            <h2>Video Editing Services</h2>
+            <p>Our expert video editing services ensure your property videos are polished and professional. We handle everything from cutting and editing to color correction and sound design.</p>
+        </div>
+        <div class="service">
+            <img src="floor_plan_creation.jpg" alt="Floor Plan Creation">
+            <h2>Floor Plan Creation</h2>
+            <p>Provide potential buyers with detailed and accurate floor plans. Our floor plan creation services help visualize the layout and flow of your properties.</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">Back to Home</a>
 </body>
 </html>
