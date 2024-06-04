@@ -1,4 +1,4 @@
-Absolutely! Let's make this more polished and Apple-like with a clear, minimalist design, two-column layout for the services, and strategically placed pitch sections. 
+Here is the updated HTML code with the services arranged in a four-column layout, interspersed with the pitch sections, and an Apple-like design:
 
 ```html
 <!DOCTYPE html>
@@ -39,10 +39,9 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             overflow: hidden;
-            max-width: 300px;
+            width: calc(25% - 20px);
             text-align: left;
             transition: transform 0.3s;
-            flex: 1 1 calc(50% - 40px);
             margin: 20px;
         }
         .service:hover {
@@ -77,7 +76,7 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
         .pitch {
             text-align: left;
             margin: 20px auto;
-            max-width: 800px;
+            width: calc(100% - 40px);
             background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -110,13 +109,6 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
             <h2>Aerial Drone Photography</h2>
             <p>Capture breathtaking aerial views of your properties with our drone photography services. Highlight the property's location, surroundings, and unique features from a perspective that stands out.</p>
         </div>
-
-        <div class="pitch">
-            <h2>Elevate Your Real Estate Listings with Premium Drone Services</h2>
-            <p><strong>Unmatched Aerial Perspectives:</strong> Imagine showcasing your properties from breathtaking angles that traditional photography simply can't capture. Our state-of-the-art drones provide stunning aerial views, highlighting the unique features of your listings and their surroundings. Give potential buyers an unforgettable first impression that sets your properties apart from the rest.</p>
-            <p><strong>Comprehensive Property Coverage:</strong> Our drone services offer more than just pretty pictures. We provide comprehensive coverage of the entire property, capturing every detail from the roof to the landscape. Show prospective buyers the full scope of what your properties have to offer, from the lush gardens to the pristine rooftops.</p>
-        </div>
-
         <div class="service">
             <img src="vr_tours.jpg" alt="Virtual Reality (VR) Tours">
             <h2>Virtual Reality (VR) Tours</h2>
@@ -129,8 +121,9 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
         </div>
 
         <div class="pitch">
-            <p><strong>Professional Quality, Seamless Integration:</strong> Our drone footage is captured with high-definition cameras, ensuring crystal-clear, professional-grade visuals. We seamlessly integrate aerial shots into your property videos, creating a cohesive and compelling narrative that captivates viewers and holds their attention.</p>
-            <p><strong>Highlight Unique Features:</strong> Is your property near a beautiful lake, park, or cityscape? Our drones can highlight these nearby attractions, giving buyers a sense of the lifestyle that comes with the property. Show them the proximity to amenities, scenic views, and more, making your listings irresistible.</p>
+            <h2>Elevate Your Real Estate Listings with Premium Drone Services</h2>
+            <p><strong>Unmatched Aerial Perspectives:</strong> Imagine showcasing your properties from breathtaking angles that traditional photography simply can't capture. Our state-of-the-art drones provide stunning aerial views, highlighting the unique features of your listings and their surroundings. Give potential buyers an unforgettable first impression that sets your properties apart from the rest.</p>
+            <p><strong>Comprehensive Property Coverage:</strong> Our drone services offer more than just pretty pictures. We provide comprehensive coverage of the entire property, capturing every detail from the roof to the landscape. Show prospective buyers the full scope of what your properties have to offer, from the lush gardens to the pristine rooftops.</p>
         </div>
 
         <div class="service">
@@ -143,12 +136,6 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
             <h2>Social Media Content</h2>
             <p>Enhance your social media presence with engaging content tailored for platforms like Instagram, Facebook, and YouTube. Capture attention and drive traffic to your listings.</p>
         </div>
-
-        <div class="pitch">
-            <p><strong>Time-Efficient and Cost-Effective:</strong> Think drone services are out of reach? Think again. Our services are designed to be time-efficient and cost-effective, giving you premium quality without breaking the bank. Save time on staging and traditional photography while getting superior results that sell faster.</p>
-            <p><strong>Boost Your Marketing Efforts:</strong> Stand out in a crowded market with high-impact marketing content. Use our stunning aerial footage on your website, social media, and listing platforms to attract more views and generate more leads. Professional drone footage is not just a luxury; it’s a necessity in today’s competitive real estate market.</p>
-        </div>
-
         <div class="service">
             <img src="video_editing_services.jpg" alt="Video Editing Services">
             <h2>Video Editing Services</h2>
@@ -161,10 +148,21 @@ Absolutely! Let's make this more polished and Apple-like with a clear, minimalis
         </div>
 
         <div class="pitch">
-            <p><strong>Safety and Expertise:</strong> Our team of licensed drone pilots ensures safe and compliant operations, adhering to all FAA regulations. You can trust us to handle the technical details while you focus on what you do best – selling properties.</p>
-            <p><strong>Why Settle for Less?</strong> In a market where every listing competes for attention, why settle for ordinary when you can have extraordinary? Elevate your real estate game with our premium drone services and make your listings the ones that buyers remember and act on. Don’t just keep up with the competition – leave them behind.</p>
-            <p>Contact us today to see how our drone services can transform your property listings and drive your sales to new heights. Don't wait. The sky's the limit!</p>
+            <p><strong>Professional Quality, Seamless Integration:</strong> Our drone footage is captured with high-definition cameras, ensuring crystal-clear, professional-grade visuals. We seamlessly integrate aerial shots into your property videos, creating a cohesive and compelling narrative that captivates viewers and holds their attention.</p>
+            <p><strong>Highlight Unique Features:</strong> Is your property near a beautiful lake, park, or cityscape? Our drones can highlight these nearby attractions, giving buyers a sense of the lifestyle that comes with the property. Show them the proximity to amenities, scenic views, and more, making your listings irresistible.</p>
         </div>
 
         <div class="service">
             <img src="construction_services.jpg" alt="Construction Services">
+            <h2>Construction Services</h2>
+            <p>Our construction services ensure that your projects are completed with the highest standards of quality and efficiency. From planning to execution, we manage every aspect to deliver outstanding results.</p>
+        </div>
+
+        <div class="pitch">
+            <p><strong>Time-Efficient and Cost-Effective:</strong> Think drone services are out of reach? Think again. Our services are designed to be time-efficient and cost-effective, giving you premium quality without breaking the bank. Save time on staging and traditional photography while getting superior results that sell faster.</p>
+            <p><strong>Boost Your Marketing Efforts:</strong> Stand out in a crowded market with high-impact marketing content. Use our stunning aerial footage on your website, social media, and listing platforms to attract more views and generate more leads. Professional drone footage is not just a luxury; it’s a necessity in today’s competitive real estate market.</p>
+        </div>
+
+        <div class="pitch">
+            <p><strong>Safety and Expertise:</strong> Our team of licensed drone pilots ensures safe and compliant operations, adhering to all FAA regulations. You can trust us to handle the technical details while you focus on what you do best – selling properties.</p>
+            <p><strong>Why Settle for Less?</strong> In a market where every listing competes for attention, why settle for ordinary when you can have extraordinary? Elevate your real estate game with our premium drone services and make your listings the ones that buyers remember and act on. Don’t just keep up with the competition – leave them behind
