@@ -1,8 +1,14 @@
+
 function loadPage(page) {
     const content = document.getElementById('content');
-    
+
     fetch(page + '.html')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.text();
+        })
         .then(data => {
             content.innerHTML = data;
         })
