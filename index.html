@@ -20,6 +20,7 @@
             color: white;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+            transition: all 0.3s;
         }
         .content {
             margin-left: 240px;
@@ -113,6 +114,34 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 10px 0;
+                box-shadow: none;
+            }
+            .sidebar h1 {
+                text-align: center;
+                margin: 0;
+            }
+            .content {
+                margin-left: 0;
+                padding: 10px;
+            }
+            .sidebar a {
+                display: inline-block;
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #444;
+            }
+            .sidebar a:last-child {
+                border-bottom: none;
+            }
         }
     </style>
 </head>
